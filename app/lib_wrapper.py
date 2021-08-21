@@ -45,3 +45,10 @@ class CAN32Wrapper(Server32):
         success = self.api3.Connect(3, "", hostname, False)
         if not success:
             raise ValueError("API connected check returned False.")
+
+    def add(self, a, b):
+        """should do an actual lib call:
+        
+        self.lib.add(a, b)
+        """
+        return a + b
